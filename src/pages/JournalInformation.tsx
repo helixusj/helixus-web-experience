@@ -9,8 +9,7 @@ const JournalInformation = () => {
     { id: "copyright", title: "Copyright and License" },
     { id: "plagiarism", title: "Plagiarism Policy" },
     { id: "charges", title: "Processing and Publication Charges" },
-    { id: "ethics", title: "Publication Ethics" },
-    { id: "guidelines", title: "Author Guidelines" }
+    { id: "ethics", title: "Publication Ethics" }
   ];
 
   return (
@@ -120,109 +119,6 @@ const JournalInformation = () => {
                     <li>No honorary authorship</li>
                     <li>Written approval from all authors</li>
                   </ul>
-                </div>
-              </div>
-            </section>
-
-            {/* Author Guidelines Section */}
-            <section id="guidelines" className="mb-12">
-              <h2 className="text-2xl font-bold text-primary mb-6">Author Guidelines for Manuscript Preparation</h2>
-              
-              <div className="space-y-8">
-                <div className="bg-accent/30 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-4">1. General Guidelines</h3>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li><strong>Originality:</strong> Manuscripts must be original, unpublished, and not under review elsewhere.</li>
-                    <li><strong>Ethics:</strong> Submissions must adhere to the journal's ethical policies.</li>
-                    <li><strong>Language:</strong> All submissions should be in clear, concise English.</li>
-                    <li><strong>Submission System:</strong> Submit via online portal in Microsoft Word format.</li>
-                  </ul>
-                </div>
-
-                <div className="bg-accent/30 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-4">2. Article Types</h3>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <h4 className="font-semibold mb-2">Research Articles</h4>
-                      <p>5,000–8,000 words, excluding references</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">Reviews</h4>
-                      <p>6,000–10,000 words, excluding references</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">Short Communications</h4>
-                      <p>2,000–3,000 words</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">Case Studies</h4>
-                      <p>3,000–5,000 words</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-6">
-                  <h3 className="text-xl font-semibold">3. Manuscript Structure</h3>
-                  
-                  <div className="bg-accent/30 p-6 rounded-lg">
-                    <h4 className="font-semibold mb-3">3.1 Title Page</h4>
-                    <ul className="list-disc pl-6 space-y-2">
-                      <li>Title: Maximum 20 words, concise and descriptive</li>
-                      <li>Author Information: Full names, affiliations, ORCID IDs</li>
-                      <li>Corresponding Author: Detailed contact information</li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-accent/30 p-6 rounded-lg">
-                    <h4 className="font-semibold mb-3">3.2 Abstract & Keywords</h4>
-                    <ul className="list-disc pl-6 space-y-2">
-                      <li>Structured abstract (300 words max)</li>
-                      <li>4–6 relevant keywords</li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-accent/30 p-6 rounded-lg">
-                    <h4 className="font-semibold mb-3">3.3 Main Text Structure</h4>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div>
-                        <h5 className="font-medium mb-2">Research Articles</h5>
-                        <ul className="list-disc pl-6">
-                          <li>Introduction</li>
-                          <li>Materials and Methods</li>
-                          <li>Results</li>
-                          <li>Discussion</li>
-                          <li>Conclusion</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h5 className="font-medium mb-2">Reviews</h5>
-                        <ul className="list-disc pl-6">
-                          <li>Introduction</li>
-                          <li>Thematic Sections</li>
-                          <li>Future Directions</li>
-                          <li>Conclusion</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-accent/30 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-4">4. Formatting Requirements</h3>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>Font: 12-point Times New Roman</li>
-                    <li>Margins: 1-inch on all sides</li>
-                    <li>Spacing: Double-space all text</li>
-                    <li>Page Numbers: Consecutive numbering</li>
-                    <li>Headings: Clear hierarchy (bold for main, italics for sub)</li>
-                  </ul>
-                </div>
-
-                <div className="bg-accent/30 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
-                  <p className="mb-2">For queries, contact:</p>
-                  <p>Email: helixusjournal@gmail.com</p>
-                  <p>Phone: +1-848-248-0450</p>
                 </div>
               </div>
             </section>
