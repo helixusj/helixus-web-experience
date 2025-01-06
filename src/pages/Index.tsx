@@ -8,21 +8,32 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-primary to-cyan-600 text-white py-20">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Advancing Scientific Discovery
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-            Helixus is a peer-reviewed journal publishing groundbreaking research across multiple disciplines.
-          </p>
-          <a 
-            href="/submit-manuscript" 
-            className="inline-flex items-center bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-          >
-            Submit Your Research
-            <ArrowRight className="ml-2" />
-          </a>
+      <div className="bg-gradient-to-r from-primary/90 to-cyan-600/90 text-white relative">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1200&h=600&fit=crop" 
+            alt="Scientific Research"
+            className="w-full h-full object-cover mix-blend-overlay"
+          />
+        </div>
+        <div className="container mx-auto px-4 py-20 relative z-10">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                Advancing Scientific Discovery
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 max-w-2xl">
+                Helixus is a peer-reviewed journal publishing groundbreaking research across multiple disciplines.
+              </p>
+              <a 
+                href="/submit-manuscript" 
+                className="inline-flex items-center bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Submit Your Research
+                <ArrowRight className="ml-2" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -44,6 +55,33 @@ const Index = () => {
               <h3 className="text-xl font-semibold mb-4">Open Access</h3>
               <p className="text-4xl font-bold text-primary mb-2">100%</p>
               <p className="text-gray-600">Freely available research</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Journal Overview */}
+      <div className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">Journal Overview</h2>
+          <div className="max-w-4xl mx-auto prose prose-lg">
+            <p className="lead text-gray-600">
+              Helixus - Intersections in Lifesciences is an international, interdisciplinary, peer-reviewed journal dedicated to publishing cutting-edge research at the convergence of biological sciences, biotechnology, and biomedical research.
+            </p>
+            <div className="grid md:grid-cols-2 gap-8 mt-8">
+              <div className="bg-accent/30 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
+                <p>Providing a multidisciplinary platform that bridges diverse fields within life sciences, fostering integrative research, innovative approaches, and transformative discoveries.</p>
+              </div>
+              <div className="bg-accent/30 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-4">Key Focus Areas</h3>
+                <ul className="list-disc list-inside">
+                  <li>Molecular and Cellular Biology</li>
+                  <li>Biotechnology and Bioengineering</li>
+                  <li>Environmental Sciences</li>
+                  <li>Computational Biology</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

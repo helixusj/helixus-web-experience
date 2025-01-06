@@ -19,6 +19,12 @@ const editors = [
     role: "Associate Editor",
     institution: "MIT",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop"
+  },
+  {
+    name: "Dr. James Rodriguez",
+    role: "Associate Editor",
+    institution: "Oxford University",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop"
   }
 ];
 
