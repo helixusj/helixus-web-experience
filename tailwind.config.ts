@@ -22,6 +22,9 @@ export default {
         border: {
           DEFAULT: "hsl(var(--border))",
         },
+        foreground: {
+          DEFAULT: "hsl(var(--foreground))",
+        },
         primary: {
           DEFAULT: "#3aa4af",
           foreground: "#ffffff",
