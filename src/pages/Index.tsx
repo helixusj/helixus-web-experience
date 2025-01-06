@@ -1,6 +1,37 @@
 import Navigation from '../components/Navigation';
-import EditorsCarousel from '../components/EditorsCarousel';
-import { ArrowRight, BookOpen, Users, Award, Globe2 } from 'lucide-react';
+import { ArrowRight, BookOpen, Users, Award, Globe2, ChevronRight } from 'lucide-react';
+import { Card } from '@/components/ui/card';
+
+const editors = [
+  {
+    name: "Dr. Sarah Johnson",
+    role: "Editor-in-Chief",
+    institution: "Harvard University",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    expertise: "Molecular Biology"
+  },
+  {
+    name: "Prof. Michael Chen",
+    role: "Associate Editor",
+    institution: "Stanford University",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    expertise: "Biotechnology"
+  },
+  {
+    name: "Dr. Emily Williams",
+    role: "Associate Editor",
+    institution: "MIT",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    expertise: "Systems Biology"
+  },
+  {
+    name: "Dr. James Rodriguez",
+    role: "Associate Editor",
+    institution: "Oxford University",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+    expertise: "Computational Biology"
+  }
+];
 
 const Index = () => {
   return (
@@ -8,7 +39,7 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-primary/90 to-cyan-600/90">
+      <div className="bg-gradient-to-r from-primary/95 to-primary/80">
         <div className="container mx-auto px-4 py-20">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
@@ -36,8 +67,8 @@ const Index = () => {
             </div>
             <div className="hidden md:block">
               <img 
-                src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600" 
-                alt="Scientific Research"
+                src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600" 
+                alt="Scientific Journal"
                 className="rounded-lg shadow-xl"
               />
             </div>
@@ -90,13 +121,13 @@ const Index = () => {
               Helixus - Intersections in Lifesciences is an international, interdisciplinary, peer-reviewed journal dedicated to publishing cutting-edge research at the convergence of biological sciences, biotechnology, and biomedical research.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-accent/30 p-6 rounded-lg">
+              <div className="bg-accent p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
                 <p className="text-gray-600">
                   Providing a multidisciplinary platform that bridges diverse fields within life sciences, fostering integrative research, innovative approaches, and transformative discoveries.
                 </p>
               </div>
-              <div className="bg-accent/30 p-6 rounded-lg">
+              <div className="bg-accent p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Key Focus Areas</h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li>Molecular and Cellular Biology</li>
@@ -110,15 +141,36 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Editors Carousel */}
-      <EditorsCarousel />
+      {/* Editorial Board Section */}
+      <div className="py-16 bg-accent">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Editorial Board</h2>
+          <div className="grid md:grid-cols-4 gap-8">
+            {editors.map((editor, index) => (
+              <Card key={index} className="overflow-hidden">
+                <div className="p-4">
+                  <img 
+                    src={editor.image} 
+                    alt={editor.name}
+                    className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+                  />
+                  <h3 className="text-xl font-semibold text-center">{editor.name}</h3>
+                  <p className="text-primary font-medium text-center">{editor.role}</p>
+                  <p className="text-gray-600 text-center text-sm">{editor.institution}</p>
+                  <p className="text-gray-500 text-center text-sm mt-2">{editor.expertise}</p>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* Latest Publications Preview */}
-      <div className="py-16 bg-muted">
+      <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8">Latest Publications</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-accent p-6 rounded-lg">
               <span className="text-sm text-primary font-medium">RESEARCH ARTICLE</span>
               <h3 className="text-xl font-semibold mt-2 mb-4">
                 Novel Approaches in Quantum Computing: A Comprehensive Review
@@ -126,11 +178,11 @@ const Index = () => {
               <p className="text-gray-600 mb-4">
                 By Dr. James Wilson, et al.
               </p>
-              <a href="#" className="text-primary font-medium hover:underline">
-                Read More →
+              <a href="#" className="text-primary font-medium hover:underline inline-flex items-center">
+                Read More <ChevronRight className="ml-1 h-4 w-4" />
               </a>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-accent p-6 rounded-lg">
               <span className="text-sm text-primary font-medium">REVIEW</span>
               <h3 className="text-xl font-semibold mt-2 mb-4">
                 The Future of Sustainable Energy: Current Trends and Perspectives
@@ -138,8 +190,8 @@ const Index = () => {
               <p className="text-gray-600 mb-4">
                 By Dr. Maria Rodriguez, et al.
               </p>
-              <a href="#" className="text-primary font-medium hover:underline">
-                Read More →
+              <a href="#" className="text-primary font-medium hover:underline inline-flex items-center">
+                Read More <ChevronRight className="ml-1 h-4 w-4" />
               </a>
             </div>
           </div>

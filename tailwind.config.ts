@@ -26,19 +26,19 @@ export default {
           DEFAULT: "hsl(var(--foreground))",
         },
         primary: {
-          DEFAULT: "#3aa4af",
+          DEFAULT: "#2C5282", // Deep blue
           foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "#1A1F2C",
+          DEFAULT: "#4A5568", // Cool gray
           foreground: "#ffffff",
         },
         accent: {
-          DEFAULT: "#F2FCE2",
-          foreground: "#1A1F2C",
+          DEFAULT: "#EDF2F7", // Light blue gray
+          foreground: "#2D3748",
         },
         background: "#FFFFFF",
-        muted: "#F1F0FB",
+        muted: "#F7FAFC",
       },
       keyframes: {
         "accordion-down": {
