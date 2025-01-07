@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Index from "./pages/Index";
 import JournalInformation from "./pages/JournalInformation";
+import Team from "./components/Team";
+import EditorDetails from "./pages/EditorDetails";
 
 // Import placeholder pages
 const PlaceholderPage = ({ title }: { title: string }) => (
@@ -31,7 +33,8 @@ const App = () => (
           <Route path="/journal-information" element={<JournalInformation />} />
           <Route path="/instructions-to-authors" element={<PlaceholderPage title="Instructions to Authors" />} />
           <Route path="/current-issue" element={<PlaceholderPage title="Current Issue" />} />
-          <Route path="/editors" element={<PlaceholderPage title="Editors" />} />
+          <Route path="/editors" element={<Team />} />
+          <Route path="/editors/:id" element={<EditorDetails />} />
           <Route path="/submit-manuscript" element={<PlaceholderPage title="Submit Manuscript" />} />
           <Route path="/contact" element={<PlaceholderPage title="Contact" />} />
         </Routes>
