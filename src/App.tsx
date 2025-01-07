@@ -9,6 +9,7 @@ import JournalInformation from "./pages/JournalInformation";
 import Team from "./components/Team";
 import EditorDetails from "./pages/EditorDetails";
 import InstructionsToAuthors from "./pages/InstructionsToAuthors";
+import Contact from "./pages/Contact";
 
 // Import placeholder pages
 const PlaceholderPage = ({ title }: { title: string }) => (
@@ -37,7 +38,7 @@ const App = () => (
           <Route path="/editors" element={<Team />} />
           <Route path="/editors/:id" element={<EditorDetails />} />
           <Route path="/submit-manuscript" element={<PlaceholderPage title="Submit Manuscript" />} />
-          <Route path="/contact" element={<PlaceholderPage title="Contact" />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
