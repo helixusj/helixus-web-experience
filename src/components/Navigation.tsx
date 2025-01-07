@@ -3,7 +3,6 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
@@ -13,9 +12,12 @@ const Navigation = () => {
     <nav className="bg-background border-b sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-xl font-bold text-primary">
-            Helixus
-          </Link>
+          <div className="flex flex-col items-start">
+            <Link to="/" className="text-xl font-bold text-primary">
+              Helixus
+            </Link>
+            <span className="text-sm text-gray-600 mt-1">Intersections in Lifesciences</span>
+          </div>
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -27,7 +29,7 @@ const Navigation = () => {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Journal</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid gap-3 p-4 w-[400px]">
+                  <div className="grid gap-3 p-4 w-[400px] bg-white/80 backdrop-blur-sm">
                     <Link to="/journal-information" className="block p-2 hover:bg-accent rounded-md">
                       Journal Information
                     </Link>
@@ -44,7 +46,7 @@ const Navigation = () => {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Editorial</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid gap-3 p-4 w-[400px]">
+                  <div className="grid gap-3 p-4 w-[400px] bg-white/80 backdrop-blur-sm">
                     <Link to="/editors" className="block p-2 hover:bg-accent rounded-md">
                       Editorial Board
                     </Link>
