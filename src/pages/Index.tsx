@@ -9,9 +9,15 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-primary/95 to-primary/80 overflow-hidden">
+      <div className="relative overflow-hidden">
+        {/* Gradient background for the text section */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/80"></div>
+        
+        {/* White background for the image section */}
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-white hidden md:block"></div>
+        
         {/* Background overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/30 md:bg-gradient-to-r md:from-black/30 md:via-black/30 md:to-transparent"></div>
         
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="grid md:grid-cols-2 gap-8 items-center">
