@@ -27,7 +27,7 @@ const editors: Editor[] = [
     name: "Dr. Aravind Jayaseelan",
     role: "Associate Editor",
     institution: "Environmental Science and Biotechnology",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    image: "/lovable-uploads/8ee1349b-8a96-4eca-9832-b5ee454b1335.png",
     expertise: "Environmental Science and Biotechnology",
     bio: "Dr. J. Aravind is an accomplished researcher in environmental science and biotechnology with extensive expertise in bioremediation, environmental remediation, and sustainable technologies. His research has made significant contributions to environmental science and pollution mitigation strategies.",
     keyHighlights: [
@@ -50,7 +50,7 @@ const editors: Editor[] = [
     name: "Dr. Satish Ramalingam",
     role: "Associate Editor",
     institution: "SRM Institute of Science and Technology",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    image: "/lovable-uploads/2a5967e1-1a68-4cef-93c1-798d717ecd5f.png",
     expertise: "Cancer Biology",
     bio: "Dr. Satish Ramalingam is an accomplished researcher and Associate Professor in the Department of Genetic Engineering at SRM Institute of Science and Technology. His pioneering work in cancer biology, particularly in understanding RNA binding proteins and cancer stem cells, has led to significant breakthroughs in cancer research.",
     researchImpact: [

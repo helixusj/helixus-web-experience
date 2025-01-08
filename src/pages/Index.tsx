@@ -1,37 +1,7 @@
 import Navigation from '../components/Navigation';
 import { ArrowRight, BookOpen, Users, Award, Globe2, ChevronRight } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-
-const editors = [
-  {
-    name: "Dr. Sarah Johnson",
-    role: "Editor-in-Chief",
-    institution: "Harvard University",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-    expertise: "Molecular Biology"
-  },
-  {
-    name: "Prof. Michael Chen",
-    role: "Associate Editor",
-    institution: "Stanford University",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    expertise: "Biotechnology"
-  },
-  {
-    name: "Dr. Emily Williams",
-    role: "Associate Editor",
-    institution: "MIT",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
-    expertise: "Systems Biology"
-  },
-  {
-    name: "Dr. James Rodriguez",
-    role: "Associate Editor",
-    institution: "Oxford University",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
-    expertise: "Computational Biology"
-  }
-];
+import { editors } from '../components/Team';
 
 const Index = () => {
   return (
@@ -67,7 +37,7 @@ const Index = () => {
             </div>
             <div className="hidden md:block">
               <img 
-                src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600" 
+                src="/lovable-uploads/66e72688-4d52-44b7-98c3-9166143e9ebd.png" 
                 alt="Scientific Journal"
                 className="rounded-lg shadow-xl"
               />
@@ -146,8 +116,8 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Editorial Board</h2>
           <div className="grid md:grid-cols-4 gap-8">
-            {editors.map((editor, index) => (
-              <Card key={index} className="overflow-hidden">
+            {editors.slice(0, 4).map((editor) => (
+              <Card key={editor.id} className="overflow-hidden">
                 <div className="p-4">
                   <img 
                     src={editor.image} 
