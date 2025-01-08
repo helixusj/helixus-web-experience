@@ -1,5 +1,5 @@
 import Navigation from '../components/Navigation';
-import { ArrowRight, BookOpen, Users, Award, Globe2, ChevronRight } from 'lucide-react';
+import { ArrowRight, BookOpen, Users, Award, Globe2, ChevronRight, Play } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { editors } from '../components/Team';
 
@@ -9,47 +9,74 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        {/* Gradient background for the text section */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/80"></div>
-        
-        {/* White background for the image section */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-white hidden md:block"></div>
-        
-        {/* Background overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/30 md:bg-gradient-to-r md:from-black/30 md:via-black/30 md:to-transparent"></div>
-        
-        <div className="container mx-auto px-4 py-20 relative z-10">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+      <div className="relative bg-white py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
             <div>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+              <h2 className="text-sm uppercase tracking-wider text-primary mb-4">
+                Intersections in Lifesciences
+              </h2>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#0A2472]">
                 Advancing Scientific Discovery
               </h1>
-              <p className="text-xl md:text-2xl mb-8 max-w-2xl text-white/90">
+              <p className="text-xl text-gray-600 mb-8 max-w-2xl">
                 Helixus is a peer-reviewed journal publishing groundbreaking research across multiple disciplines.
               </p>
               <div className="flex gap-4">
                 <a 
                   href="/submit-manuscript" 
-                  className="inline-flex items-center bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                  className="inline-flex items-center bg-[#0066FF] text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors"
                 >
                   Submit Your Research
                   <ArrowRight className="ml-2" />
                 </a>
                 <a 
                   href="/journal-information" 
-                  className="inline-flex items-center border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors"
+                  className="inline-flex items-center border-2 border-[#FFB800] text-[#0A2472] px-6 py-3 rounded-lg font-semibold hover:bg-yellow-50 transition-colors"
                 >
+                  <Play className="mr-2" size={20} />
                   Learn More
                 </a>
               </div>
             </div>
-            <div className="hidden md:block">
-              <img 
-                src="/lovable-uploads/9773f725-8c48-44ea-8a3e-94422319c13a.png" 
-                alt="DNA Structure"
-                className="rounded-lg shadow-2xl w-full h-[400px] object-cover transform hover:scale-105 transition-transform duration-300"
-              />
+
+            {/* Right Content - Image Grid */}
+            <div className="relative">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="col-span-2">
+                  <img 
+                    src="/lovable-uploads/9773f725-8c48-44ea-8a3e-94422319c13a.png" 
+                    alt="DNA Structure"
+                    className="w-full h-[300px] object-cover rounded-2xl shadow-lg"
+                  />
+                </div>
+                <div className="bg-white p-4 rounded-2xl shadow-lg flex items-center gap-2">
+                  <div className="bg-blue-500 p-2 rounded-full">
+                    <Users className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-500">24/7</p>
+                    <p className="font-semibold">Support</p>
+                  </div>
+                </div>
+                <div className="bg-white p-4 rounded-2xl shadow-lg">
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className="flex -space-x-2">
+                      {editors.slice(0, 4).map((editor, index) => (
+                        <img 
+                          key={index}
+                          src={editor.image} 
+                          alt={editor.name}
+                          className="w-8 h-8 rounded-full border-2 border-white"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-sm text-gray-500">Satisfied authors</p>
+                  <p className="font-semibold">100K+</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
