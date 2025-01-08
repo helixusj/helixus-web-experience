@@ -9,8 +9,11 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-primary/95 to-primary/80">
-        <div className="container mx-auto px-4 py-20">
+      <div className="relative bg-gradient-to-r from-primary/95 to-primary/80 overflow-hidden">
+        {/* Background overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/30"></div>
+        
+        <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
@@ -37,9 +40,9 @@ const Index = () => {
             </div>
             <div className="hidden md:block">
               <img 
-                src="/lovable-uploads/66e72688-4d52-44b7-98c3-9166143e9ebd.png" 
-                alt="Scientific Journal"
-                className="rounded-lg shadow-xl"
+                src="/lovable-uploads/9773f725-8c48-44ea-8a3e-94422319c13a.png" 
+                alt="DNA Structure"
+                className="rounded-lg shadow-2xl w-full h-[400px] object-cover transform hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
