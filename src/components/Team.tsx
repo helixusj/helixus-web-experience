@@ -21,7 +21,7 @@ interface Editor {
   leadershipRecognition?: string[];
 }
 
-const editors: Editor[] = [
+export const editors: Editor[] = [
   {
     id: 1,
     name: "Dr. Aravind Jayaseelan",
