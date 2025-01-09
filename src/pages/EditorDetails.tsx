@@ -216,7 +216,7 @@ const editors: Editor[] = [
     }
   },
   {
-    id: 11,
+    id: 12,
     name: "Dr. Muralidharan Anbalagan",
     role: "Associate Editor",
     institution: "Chettinad Academy of Research and Education",
@@ -230,7 +230,7 @@ const editors: Editor[] = [
     }
   },
 {
-    id: 11,
+    id: 13,
     name: "Dr. Santosh Yadav",
     role: "Associate Editor",
     institution: "Chettinad Academy of Research and Education",
