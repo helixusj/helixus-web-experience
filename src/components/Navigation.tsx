@@ -16,7 +16,7 @@ const Navigation = () => {
             <Link to="/" className="text-2xl font-bold text-primary">
               Helixus
             </Link>
-            <span className="text-base text-gray-600 mt-1">Intersections in Lifesciences</span>
+            <span className="text-base text-gray-600 mt-1">Intersections in Life sciences</span>
           </div>
           <NavigationMenu>
             <NavigationMenuList>
