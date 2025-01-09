@@ -4,6 +4,12 @@ import { Card } from '@/components/ui/card';
 import { editors } from '../components/Team';
 
 const Index = () => {
+  const editorInChief = editors.find(editor => editor.role === "Editor-in-Chief");
+  const strategicAdvisor = editors.find(editor => editor.role === "Strategic Advisor");
+  const featuredEditors = editors.filter(editor => 
+    editor.role !== "Editor-in-Chief" && editor.role !== "Strategic Advisor"
+  ).slice(0, 4);
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -147,25 +153,73 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Editorial Board Section */}
+      {/* Leadership Section */}
       <div className="py-16 bg-accent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Editorial Board</h2>
+          {editorInChief && (
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold text-center mb-8">Editor in Chief</h2>
+              <Link to={`/editors/${editorInChief.id}`}>
+                <Card className="max-w-2xl mx-auto overflow-hidden">
+                  <div className="p-6 flex items-center space-x-6">
+                    <img 
+                      src={editorInChief.image} 
+                      alt={editorInChief.name}
+                      className="w-32 h-32 rounded-full object-cover"
+                    />
+                    <div>
+                      <h3 className="text-2xl font-semibold">{editorInChief.name}</h3>
+                      <p className="text-primary font-medium">{editorInChief.role}</p>
+                      <p className="text-gray-600">{editorInChief.institution}</p>
+                      <p className="text-gray-500 mt-2">{editorInChief.expertise}</p>
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            </div>
+          )}
+
+          {strategicAdvisor && (
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold text-center mb-8">Strategic Advisor</h2>
+              <Link to={`/editors/${strategicAdvisor.id}`}>
+                <Card className="max-w-2xl mx-auto overflow-hidden">
+                  <div className="p-6 flex items-center space-x-6">
+                    <img 
+                      src={strategicAdvisor.image} 
+                      alt={strategicAdvisor.name}
+                      className="w-32 h-32 rounded-full object-cover"
+                    />
+                    <div>
+                      <h3 className="text-2xl font-semibold">{strategicAdvisor.name}</h3>
+                      <p className="text-primary font-medium">{strategicAdvisor.role}</p>
+                      <p className="text-gray-600">{strategicAdvisor.institution}</p>
+                      <p className="text-gray-500 mt-2">{strategicAdvisor.expertise}</p>
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            </div>
+          )}
+
+          <h2 className="text-3xl font-bold text-center mb-8">Editorial Board</h2>
           <div className="grid md:grid-cols-4 gap-8">
-            {editors.slice(0, 4).map((editor) => (
-              <Card key={editor.id} className="overflow-hidden">
-                <div className="p-4">
-                  <img 
-                    src={editor.image} 
-                    alt={editor.name}
-                    className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-                  />
-                  <h3 className="text-xl font-semibold text-center">{editor.name}</h3>
-                  <p className="text-primary font-medium text-center">{editor.role}</p>
-                  <p className="text-gray-600 text-center text-sm">{editor.institution}</p>
-                  <p className="text-gray-500 text-center text-sm mt-2">{editor.expertise}</p>
-                </div>
-              </Card>
+            {featuredEditors.map((editor) => (
+              <Link to={`/editors/${editor.id}`} key={editor.id}>
+                <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                  <div className="p-4">
+                    <img 
+                      src={editor.image} 
+                      alt={editor.name}
+                      className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h3 className="text-xl font-semibold text-center">{editor.name}</h3>
+                    <p className="text-primary font-medium text-center">{editor.role}</p>
+                    <p className="text-gray-600 text-center text-sm">{editor.institution}</p>
+                    <p className="text-gray-500 text-center text-sm mt-2">{editor.expertise}</p>
+                  </div>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>

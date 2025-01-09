@@ -13,10 +13,10 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex flex-col items-start">
-            <Link to="/" className="text-xl font-bold text-primary">
+            <Link to="/" className="text-2xl font-bold text-primary">
               Helixus
             </Link>
-            <span className="text-sm text-gray-600 mt-1">Intersections in Lifesciences</span>
+            <span className="text-base text-gray-600 mt-1">Intersections in Lifesciences</span>
           </div>
           <NavigationMenu>
             <NavigationMenuList>
@@ -44,14 +44,9 @@ const Navigation = () => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Editorial</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <div className="grid gap-3 p-4 w-[400px] bg-white/80 backdrop-blur-sm">
-                    <Link to="/editors" className="block p-2 hover:bg-accent rounded-md">
-                      Editorial Board
-                    </Link>
-                  </div>
-                </NavigationMenuContent>
+                <Link to="/editors" className="text-foreground hover:text-primary transition-colors px-4 py-2">
+                  Editorial
+                </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
