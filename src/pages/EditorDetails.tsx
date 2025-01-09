@@ -234,7 +234,7 @@ const editors: Editor[] = [
     name: "Dr. Santosh Yadav",
     role: "Associate Editor",
     institution: "Chettinad Academy of Research and Education",
-    image: "/lovable-uploads/SurajitPathak.jpeg",
+    image: "/lovable-uploads/Santosh_Yadav.jpeg",
     expertise: "Cancer Biology",
     bio: "Professor",
     scholarLinks: {
