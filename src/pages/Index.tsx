@@ -21,9 +21,6 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              <h2 className="text-sm uppercase tracking-wider text-primary mb-4">
-                Intersections in Life Sciences
-              </h2>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#0A2472]">
                 Advancing Life Science Breakthroughs
               </h1>
@@ -69,16 +66,14 @@ const Index = () => {
                 </div>
                 <div className="bg-white p-4 rounded-2xl shadow-lg">
                   <div className="flex items-center gap-2 mb-2">
-                    <div className="flex -space-x-2">
-                      {editors.slice(0, 4).map((editor, index) => (
-                        <img 
-                          key={index}
-                          src={editor.image} 
-                          alt={editor.name}
-                          className="w-8 h-8 rounded-full border-2 border-white"
-                        />
-                      ))}
-                    </div>
+                    {editors.slice(0, 4).map((editor, index) => (
+                      <img 
+                        key={index}
+                        src={editor.image} 
+                        alt={editor.name}
+                        className="w-8 h-8 rounded-full border-2 border-white"
+                      />
+                    ))}
                   </div>
                   <p className="text-sm text-gray-500">Satisfied authors</p>
                   <p className="font-semibold">10+</p>

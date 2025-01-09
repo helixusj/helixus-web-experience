@@ -36,6 +36,9 @@ const Navigation = () => {
                     <Link to="/instructions-to-authors" className="block p-2 hover:bg-accent rounded-md">
                       Instructions to Authors
                     </Link>
+                    <Link to="/call-for-papers" className="block p-2 hover:bg-accent rounded-md">
+                      Call for Papers
+                    </Link>
                     <Link to="/current-issue" className="block p-2 hover:bg-accent rounded-md">
                       Current Issue
                     </Link>

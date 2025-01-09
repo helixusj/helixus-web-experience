@@ -1,5 +1,6 @@
 import Navigation from '../components/Navigation';
 import { Card, CardContent } from "@/components/ui/card";
+import { BookOpen, Award, Globe2, FileText } from 'lucide-react';
 
 const JournalInformation = () => {
   const sections = [
@@ -20,7 +21,7 @@ const JournalInformation = () => {
         <div className="grid grid-cols-12 gap-6">
           {/* TOC Sidebar */}
           <div className="col-span-12 md:col-span-3">
-            <Card className="sticky top-4">
+            <Card className="sticky top-4 bg-gradient-to-br from-blue-50 to-indigo-50">
               <CardContent className="p-4">
                 <h3 className="text-lg font-semibold mb-4">Table of Contents</h3>
                 <nav className="space-y-2">
@@ -40,6 +41,27 @@ const JournalInformation = () => {
 
           {/* Main Content */}
           <div className="col-span-12 md:col-span-9 prose prose-lg max-w-none">
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-lg mb-12">
+              <h1 className="text-3xl font-bold text-primary mb-4">Journal Information</h1>
+              <div className="grid md:grid-cols-3 gap-6 mt-8">
+                <div className="flex flex-col items-center text-center">
+                  <BookOpen className="w-12 h-12 text-primary mb-4" />
+                  <h3 className="font-semibold">Open Access</h3>
+                  <p className="text-sm text-gray-600">Freely available research</p>
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <Award className="w-12 h-12 text-primary mb-4" />
+                  <h3 className="font-semibold">Peer Reviewed</h3>
+                  <p className="text-sm text-gray-600">Rigorous review process</p>
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <Globe2 className="w-12 h-12 text-primary mb-4" />
+                  <h3 className="font-semibold">Global Reach</h3>
+                  <p className="text-sm text-gray-600">International audience</p>
+                </div>
+              </div>
+            </div>
+
             <section id="objectives" className="mb-12">
               <h2 className="text-2xl font-bold text-primary mb-4">Objectives and Scope</h2>
               <p className="mb-4">

@@ -1,5 +1,6 @@
 import Navigation from '../components/Navigation';
 import { Card, CardContent } from "@/components/ui/card";
+import { BookOpen, FileText, Award } from 'lucide-react';
 
 const InstructionsToAuthors = () => {
   const sections = [
@@ -22,7 +23,7 @@ const InstructionsToAuthors = () => {
         <div className="grid grid-cols-12 gap-6">
           {/* TOC Sidebar */}
           <div className="col-span-12 md:col-span-3">
-            <Card className="sticky top-4">
+            <Card className="sticky top-4 bg-gradient-to-br from-green-50 to-emerald-50">
               <CardContent className="p-4">
                 <h3 className="text-lg font-semibold mb-4">Table of Contents</h3>
                 <nav className="space-y-2">
@@ -42,8 +43,27 @@ const InstructionsToAuthors = () => {
 
           {/* Main Content */}
           <div className="col-span-12 md:col-span-9 prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold text-primary mb-8">Author Guidelines for Manuscript Preparation</h1>
-            
+            <div className="bg-gradient-to-br from-yellow-50 to-orange-50 p-8 rounded-lg mb-12">
+              <h1 className="text-3xl font-bold text-primary mb-4">Author Guidelines</h1>
+              <div className="grid md:grid-cols-3 gap-6 mt-8">
+                <div className="flex flex-col items-center text-center">
+                  <BookOpen className="w-12 h-12 text-primary mb-4" />
+                  <h3 className="font-semibold">Clear Guidelines</h3>
+                  <p className="text-sm text-gray-600">Step-by-step instructions</p>
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <FileText className="w-12 h-12 text-primary mb-4" />
+                  <h3 className="font-semibold">Templates</h3>
+                  <p className="text-sm text-gray-600">Ready-to-use formats</p>
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <Award className="w-12 h-12 text-primary mb-4" />
+                  <h3 className="font-semibold">Quality Standards</h3>
+                  <p className="text-sm text-gray-600">Excellence in publishing</p>
+                </div>
+              </div>
+            </div>
+
             <section id="general" className="mb-12">
               <h2 className="text-2xl font-bold text-primary mb-4">1. General Guidelines</h2>
               <ul className="list-disc pl-6 space-y-2">
