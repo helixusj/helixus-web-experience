@@ -28,7 +28,7 @@ const Index = () => {
                 Advancing Scientific Discovery
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-                Helixus is a peer-reviewed journal publishing groundbreaking research across multiple disciplines.
+                Helixus is a peer-reviewed journal publishing groundbreaking research across multiple disciplines in Lifesciences.
               </p>
               <div className="flex gap-4">
                 <a 
@@ -144,7 +144,7 @@ const Index = () => {
                 <h3 className="text-xl font-semibold mb-4">Key Info</h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li>Semi-annual Journal</li>
-                  <li>Interdisciplinary</li>
+                  <li>Interdisciplinary in Lifesciences</li>
                   <li>Peer Reviewed</li>
                   <li>Open Access</li>
                 </ul>
