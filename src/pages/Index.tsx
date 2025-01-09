@@ -1,7 +1,8 @@
 import Navigation from '../components/Navigation';
 import { ArrowRight, BookOpen, Users, Award, Globe2, ChevronRight, Play } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import { editors } from '../components/Team';
+import { editors } from '../components/editors.data';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   const editorInChief = editors.find(editor => editor.role === "Editor-in-Chief");

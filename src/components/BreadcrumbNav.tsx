@@ -27,9 +27,9 @@ export function BreadcrumbNav() {
     <Breadcrumb className="mb-6 px-4">
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink as={Link} to="/">
+          <Link to="/" className="text-sm font-medium hover:text-primary">
             Home
-          </BreadcrumbLink>
+          </Link>
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         {pathSegments.map((segment, index) => {
@@ -42,9 +42,9 @@ export function BreadcrumbNav() {
                 <BreadcrumbPage>{routeNames[path] || segment}</BreadcrumbPage>
               ) : (
                 <>
-                  <BreadcrumbLink as={Link} to={path}>
+                  <Link to={path} className="text-sm font-medium hover:text-primary">
                     {routeNames[path] || segment}
-                  </BreadcrumbLink>
+                  </Link>
                   <BreadcrumbSeparator />
                 </>
               )}
