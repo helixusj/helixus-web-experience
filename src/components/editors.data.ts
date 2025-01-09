@@ -27,10 +27,10 @@ export interface Editor {
 export const editors: Editor[] = [
   {
     id: 0,
-    name: "Dr. Muralidharan Anbalagan",
+    name: "Reputed Scholar",
     role: "Editor-in-Chief",
     institution: "Tulane University School of Medicine",
-    image: "/lovable-uploads/Muralidharan_Anbalagan.jpeg",
+    image: "/placeholder.svg",
     expertise: "Cancer Biology and Therapeutics",
     bio: "Dr. Muralidharan Anbalagan is a distinguished Professor at Tulane University School of Medicine with extensive expertise in cancer biology and therapeutic development. His groundbreaking research has significantly advanced our understanding of cancer mechanisms and treatment approaches.",
     scholarLinks: {
