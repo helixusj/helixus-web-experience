@@ -72,10 +72,10 @@ export const editors: Editor[] = [
   },
   {
     id: 3,
-    name: "Dr. Aravindan Natarajan",
+    name: "Dr. Ilangovan Ramachandran",
     role: "Associate Editor",
     institution: "Oklahoma State University",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+    image: "/lovable-uploads/Ilango.jpeg",
     expertise: "Radiation Biology and Cancer",
     bio: "Professor and Kerr Chair in the Department of Physiological Sciences, Oklahoma State University"
   },
@@ -84,7 +84,7 @@ export const editors: Editor[] = [
     name: "Dr. Rajasingh Johnson",
     role: "Associate Editor",
     institution: "The University of Tennessee Health Science Center",
-    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&fit=crop",
+    image: "/lovable-uploads/Rajasingh_Johnson.jpeg",
     expertise: "Stem cell Biology",
     bio: "Professor, College of Dentistry, Department of Bioscience Research"
   },
@@ -93,7 +93,7 @@ export const editors: Editor[] = [
     name: "Dr. Shahid Umar",
     role: "Associate Editor",
     institution: "University of Kansas Medical Center",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
+    image: "/lovable-uploads/umar-shahid.jpg",
     expertise: "Gut Microbiome, Cancer Biology",
     bio: "Professor, Department of Surgery"
   },
@@ -102,7 +102,7 @@ export const editors: Editor[] = [
     name: "Dr. Joy Scaria",
     role: "Associate Editor",
     institution: "Oklahoma State University",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
+    image: "/lovable-uploads/Joy_Scaria.jpeg",
     expertise: "Veterinary Pathobiology, Gut Microbiome",
     bio: "Associate Professor, Veterinary Pathobiology, Stillwater, Oklahoma"
   },
@@ -111,7 +111,7 @@ export const editors: Editor[] = [
     name: "Dr. Selvendiran Karuppaiyah",
     role: "Associate Editor",
     institution: "The Ohio State University",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=400&fit=crop",
+    image: "/lovable-uploads/karuppaiyah-selva-small1.jpg",
     expertise: "Hormones and Cancer",
     bio: "Associate Professor, Translational Therapeutics, The James"
   },
@@ -120,7 +120,7 @@ export const editors: Editor[] = [
     name: "Dr. Sitadjody Sivanandane",
     role: "Associate Editor",
     institution: "Wake Forest Institute for Regenerative Medicine",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    image: "/lovable-uploads/Sivanandane-Sittadjody.png",
     expertise: "Regenerative Medicine",
     bio: "Associate Staff Scientist"
   },
@@ -129,16 +129,16 @@ export const editors: Editor[] = [
     name: "Dr. Kumar S. Bishnupuri",
     role: "Associate Editor",
     institution: "Washington University in St. Louis",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    image: "/lovable-uploads/Sanjeev_Kumar_Bishnupuri.jpeg",
     expertise: "Inflammation and cancer",
     bio: "Assistant Professor of Medicine, Division of Gastroenterology"
   },
   {
     id: 10,
-    name: "Dr. Ilangovan Ramachandran",
+    name: "Dr. Aravindan Natarajan",
     role: "Associate Editor",
     institution: "University of Madras",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    image: "/lovable-uploads/Aravindan_Natarajan.jpeg",
     expertise: "Endocrinology",
     bio: "Assistant Professor, Department of Endocrinology"
   },
@@ -147,7 +147,7 @@ export const editors: Editor[] = [
     name: "Dr. Surajit Pathak",
     role: "Associate Editor",
     institution: "Chettinad Academy of Research and Education",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
+    image: "/lovable-uploads/SurajitPathak.jpeg",
     expertise: "Cancer Biology",
     bio: "Professor"
   }

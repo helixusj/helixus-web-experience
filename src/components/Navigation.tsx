@@ -50,11 +50,14 @@ const Navigation = () => {
                     <Link to="/editors" className="block p-2 hover:bg-accent rounded-md">
                       Editorial Board
                     </Link>
-                    <Link to="/submit-manuscript" className="block p-2 hover:bg-accent rounded-md">
-                      Submit Manuscript
-                    </Link>
                   </div>
                 </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <Link to="/submit-manuscript" className="text-foreground hover:text-primary transition-colors px-4 py-2">
+                  Submit Manuscript
+                </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>

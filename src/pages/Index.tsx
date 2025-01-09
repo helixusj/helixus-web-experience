@@ -74,7 +74,7 @@ const Index = () => {
                     </div>
                   </div>
                   <p className="text-sm text-gray-500">Satisfied authors</p>
-                  <p className="font-semibold">100K+</p>
+                  <p className="font-semibold">10+</p>
                 </div>
               </div>
             </div>
@@ -90,7 +90,7 @@ const Index = () => {
               <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-4">
                 <BookOpen className="w-6 h-6 text-primary" />
               </div>
-              <p className="text-4xl font-bold text-primary mb-2">4.832</p>
+              <p className="text-4xl font-bold text-primary mb-2">TBA</p>
               <p className="text-gray-600">Impact Factor</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -134,12 +134,12 @@ const Index = () => {
                 </p>
               </div>
               <div className="bg-accent p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-4">Key Focus Areas</h3>
+                <h3 className="text-xl font-semibold mb-4">Key Info</h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
-                  <li>Molecular and Cellular Biology</li>
-                  <li>Biotechnology and Bioengineering</li>
-                  <li>Environmental Sciences</li>
-                  <li>Computational Biology</li>
+                  <li>Semi-annual Journal</li>
+                  <li>Interdisciplinary</li>
+                  <li>Peer Reviewed</li>
+                  <li>Open Access</li>
                 </ul>
               </div>
             </div>
