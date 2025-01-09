@@ -214,6 +214,34 @@ const editors: Editor[] = [
       scopus: "https://www.scopus.com/authid/123456799",
       googleScholar: "https://scholar.google.com/citations?user=123456799"
     }
+  },
+  {
+    id: 11,
+    name: "Dr. Muralidharan Anbalagan",
+    role: "Associate Editor",
+    institution: "Chettinad Academy of Research and Education",
+    image: "/lovable-uploads/Muralidharan_Anbalagan.jpeg",
+    expertise: "Cancer Biology",
+    bio: "Professor",
+    scholarLinks: {
+      orcid: "https://orcid.org/0000-0002-1234-5688",
+      scopus: "https://www.scopus.com/authid/123456799",
+      googleScholar: "https://scholar.google.com/citations?user=123456799"
+    }
+  },
+{
+    id: 11,
+    name: "Dr. Santosh Yadav",
+    role: "Associate Editor",
+    institution: "Chettinad Academy of Research and Education",
+    image: "/lovable-uploads/SurajitPathak.jpeg",
+    expertise: "Cancer Biology",
+    bio: "Professor",
+    scholarLinks: {
+      orcid: "https://orcid.org/0000-0002-1234-5688",
+      scopus: "https://www.scopus.com/authid/123456799",
+      googleScholar: "https://scholar.google.com/citations?user=123456799"
+    }
   }
 ];
 
