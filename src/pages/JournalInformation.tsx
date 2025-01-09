@@ -50,15 +50,36 @@ const JournalInformation = () => {
                 "Helixus Intersections in Life Sciences" aims to provide a multidisciplinary platform that bridges diverse fields within life sciences, fostering integrative research, innovative approaches, and transformative discoveries.
               </p>
               <h3 className="text-xl font-semibold mb-3">Scope</h3>
-              <p>The journal welcomes original research articles, reviews, perspectives, and short communications in the following areas:</p>
+              <p>The journal welcomes original research articles, reviews, perspectives, and short communications that include, but are not limited to, the following areas:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Molecular and Cellular Biology</li>
-                <li>Biotechnology and Bioengineering</li>
-                <li>Environmental and Ecological Intersections</li>
-                <li>Computational and Systems Biology</li>
-                <li>Translational and Clinical Applications</li>
-                <li>Interdisciplinary Research</li>
-                <li>Emerging Technologies and Trends</li>
+                <li>Molecular and cellular biology</li>
+<li>Gene regulation, expression, and editing</li>
+<li>Signal transduction pathways</li>
+<li>Cellular mechanisms in health and disease</li>
+<li>Biotechnology and bioengineering</li>
+<li>Advances in synthetic biology and metabolic engineering</li>
+<li>Applications of biotechnological innovations in agriculture, healthcare, and industry</li>
+<li>Development of bioprocesses for sustainable solutions</li>
+<li>Environmental and ecological intersections</li>
+<li>Biodiversity and conservation biology</li>
+<li>Bioremediation and ecosystem restoration</li>
+<li>Climate change impacts on life sciences</li>
+<li>Computational and systems biology</li>
+<li>Bioinformatics and data-driven approaches to life sciences</li>
+<li>Modelling and simulation of biological networks</li>
+<li>Integration of AI and machine learning in biological research</li>
+<li>Translational and clinical applications</li>
+<li>Innovations in drug discovery and delivery systems</li>
+<li>Biomarker discovery and diagnostics</li>
+<li>Personalised medicine and therapeutic strategies</li>
+<li>Interdisciplinary research</li>
+<li>Cross-disciplinary studies connecting life sciences with physics, chemistry, and engineering</li>
+<li>Exploration of the ethical, societal, and philosophical implications of life sciences research</li>
+<li>Emerging technologies and trends</li>
+<li>Nanotechnology in biological applications</li>
+<li>Advanced imaging and omics technologies</li>
+<li>Recent breakthroughs in life sciences</li>
+
               </ul>
             </section>
 
