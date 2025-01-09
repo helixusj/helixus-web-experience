@@ -50,9 +50,9 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold">Address</h3>
-                <p>123 Science Avenue</p>
-                <p>Research District</p>
-                <p>Academic City, AC 12345</p>
+                <p>830 Judson Avenue</p>
+                <p>Evanston</p>
+                <p>Illinois,  60202</p>
               </div>
             </div>
           </div>
