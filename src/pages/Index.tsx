@@ -22,13 +22,13 @@ const Index = () => {
             {/* Left Content */}
             <div>
               <h2 className="text-sm uppercase tracking-wider text-primary mb-4">
-                Intersections in Lifesciences
+                Intersections in Life Sciences
               </h2>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#0A2472]">
-                Advancing Scientific Discovery
+                Advancing Life Science Breakthroughs
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-                Helixus is a peer-reviewed journal publishing groundbreaking research across multiple disciplines in Lifesciences.
+                Helixus is a peer-reviewed journal publishing impactful research across all disciplines in the Life Sciences, driving discovery and innovation.
               </p>
               <div className="flex gap-4">
                 <a 
@@ -144,7 +144,7 @@ const Index = () => {
                 <h3 className="text-xl font-semibold mb-4">Key Info</h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li>Semi-annual Journal</li>
-                  <li>Interdisciplinary in Lifesciences</li>
+                  <li>Interdisciplinary in Life sciences</li>
                   <li>Peer Reviewed</li>
                   <li>Open Access</li>
                 </ul>
