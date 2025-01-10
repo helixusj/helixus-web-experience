@@ -8,9 +8,11 @@ export const HeroSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-[#0A2472] whitespace-nowrap">
-              Advancing Life Science Breakthroughs
-            </h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-[#0A2472]">
+  Advancing Life Science
+  <br />
+  Breakthroughs
+</h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl">
               Helixus is a peer-reviewed journal publishing impactful research across all disciplines in the Life Sciences, driving discovery and innovation.
             </p>
