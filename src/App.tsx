@@ -11,6 +11,7 @@ import EditorDetails from "./pages/EditorDetails";
 import InstructionsToAuthors from "./pages/InstructionsToAuthors";
 import Contact from "./pages/Contact";
 import CallForPapers from "./pages/CallForPapers";
+import SubmitManuscript from "./pages/SubmitManuscript";
 
 // Import placeholder pages
 const PlaceholderPage = ({ title }: { title: string }) => (
@@ -39,7 +40,7 @@ const App = () => (
           <Route path="/current-issue" element={<PlaceholderPage title="Current Issue" />} />
           <Route path="/editors" element={<Team />} />
           <Route path="/editors/:id" element={<EditorDetails />} />
-          <Route path="/submit-manuscript" element={<PlaceholderPage title="Submit Manuscript" />} />
+          <Route path="/submit-manuscript" element={<SubmitManuscript />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
