@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { Upload, FileText, Users, Flask, Mail } from "lucide-react";
+import { Upload, FileText, Users, Microscope, Mail } from "lucide-react";
 
 interface Author {
   firstName: string;
@@ -248,7 +248,7 @@ const SubmitManuscript = () => {
               {/* Research Details Section */}
               <div className="space-y-4">
                 <div className="flex items-center gap-2 text-primary">
-                  <Flask className="h-5 w-5" />
+                  <Microscope className="h-5 w-5" />
                   <h3 className="text-lg font-semibold">Research Details</h3>
                 </div>
                 
