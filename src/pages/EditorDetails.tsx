@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 import { Card } from "@/components/ui/card";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { Link, UserRound, Award, BookOpen, GraduationCap } from "lucide-react";
-import { editors } from "../components/editors.data";
+import { editors } from "../data/editors";
 
 const EditorDetails = () => {
   const { id } = useParams();

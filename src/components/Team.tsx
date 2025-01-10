@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import { BreadcrumbNav } from "./BreadcrumbNav";
-import { editors } from "./editors.data";
+import { editors } from "../data/editors";
 
 const Team = () => {
   const editorInChief = editors.find(editor => editor.role === "Editor-in-Chief");
