@@ -21,7 +21,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#0A2472]">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#0A2472] whitespace-nowrap">
                 Advancing Life Science Breakthroughs
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-2xl">

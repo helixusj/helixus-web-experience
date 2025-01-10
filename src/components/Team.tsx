@@ -3,37 +3,13 @@ import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import { BreadcrumbNav } from "./BreadcrumbNav";
 import { editors } from "./editors.data";
-import { useState } from "react";
-import {
-  Pagination,
-  PaginationContent,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
-
-const ITEMS_PER_PAGE = 9;
 
 const Team = () => {
-  const [currentPage, setCurrentPage] = useState(1);
   const editorInChief = editors.find(editor => editor.role === "Editor-in-Chief");
   const associateEditors = editors.filter(editor => editor.role === "Associate Editor");
-  
-  // Calculate pagination
-  const totalPages = Math.ceil(associateEditors.length / ITEMS_PER_PAGE);
-  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const endIndex = startIndex + ITEMS_PER_PAGE;
-  const currentEditors = associateEditors.slice(startIndex, endIndex);
-
-  const handlePageChange = (page: number) => {
-    setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   console.log('Total editors:', editors.length);
-  console.log('Current page:', currentPage);
-  console.log('Editors on current page:', currentEditors.length);
+  console.log('Associate editors:', associateEditors.length);
 
   return (
     <div className="py-12">
@@ -72,7 +48,7 @@ const Team = () => {
         <div>
           <h2 className="text-2xl font-semibold mb-8 text-center">Associate Editors</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {currentEditors.map((editor) => (
+            {associateEditors.map((editor) => (
               <Link to={`/editors/${editor.id}`} key={editor.id}>
                 <Card className="p-6 hover:shadow-lg transition-shadow">
                   <div className="flex flex-col items-center text-center">
@@ -90,45 +66,6 @@ const Team = () => {
               </Link>
             ))}
           </div>
-
-          {/* Pagination */}
-          {totalPages > 1 && (
-            <div className="mt-8">
-              <Pagination>
-                <PaginationContent>
-                  {currentPage > 1 && (
-                    <PaginationItem>
-                      <PaginationPrevious 
-                        onClick={() => handlePageChange(currentPage - 1)}
-                        className="cursor-pointer"
-                      />
-                    </PaginationItem>
-                  )}
-                  
-                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                    <PaginationItem key={page}>
-                      <PaginationLink
-                        onClick={() => handlePageChange(page)}
-                        isActive={currentPage === page}
-                        className="cursor-pointer"
-                      >
-                        {page}
-                      </PaginationLink>
-                    </PaginationItem>
-                  ))}
-
-                  {currentPage < totalPages && (
-                    <PaginationItem>
-                      <PaginationNext 
-                        onClick={() => handlePageChange(currentPage + 1)}
-                        className="cursor-pointer"
-                      />
-                    </PaginationItem>
-                  )}
-                </PaginationContent>
-              </Pagination>
-            </div>
-          )}
         </div>
       </div>
     </div>
