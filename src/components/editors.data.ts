@@ -267,5 +267,3 @@ export const editors: Editor[] = [
     }
   }
 ];
-
-export { editors };
